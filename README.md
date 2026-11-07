@@ -1,6 +1,6 @@
 # TOS (terminal system order) 
 
-this project is used for odering food through terminal even though its just a dummy or no real functionality.
+this project is used for odering food through terminal even though its just a dummy or no real functionality in real life. 
 
 
 
