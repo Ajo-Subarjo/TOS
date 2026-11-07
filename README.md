@@ -9,9 +9,8 @@ this project is used for odering food through terminal even though its just a du
 
 ![image](Screenshot.png)
 
-### Getting Started
-Dependencies
-- u need to have python installed before running this 
+### Getting started 
+Before running the program u need to have installed python on your machine. 
 
 #### Running the program
 
@@ -21,7 +20,7 @@ Dependencies
 #### Removing the program
 - pip uninstall tos
 
-    
+
 ## License
 
 This project is licensed under the MIT License - see the LICENSE.md file for details
