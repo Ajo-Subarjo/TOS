@@ -1,22 +1,20 @@
-TOS
+# TOS
 
-TOS (terminal system order) is simple terminal based ordering system using textualize for tui 
+#### TOS (terminal system order) is simple terminal based ordering system using textualize for tui 
 
 ![image](Screenshot.png)
 
-Getting Started
+### Getting Started
 Dependencies
+- u need to have python installed before running this 
 
-    u need to have python installed before running this 
+#### Running the program
 
-Running the program
+- pip install git+https://github.com/Ajo-Subarjo/TOS && tos
+- copy that command to the terminal
 
-    pip install git+https://github.com/Ajo-Subarjo/TOS && tos
-    copy that command to the terminal
-
-Removing the program
-
-    pip uninstall tos
+#### Removing the program
+- pip uninstall tos
 
     
 License
