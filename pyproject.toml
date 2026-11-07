@@ -1,0 +1,12 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "tos"
+version = "0.1.0"
+requires-python = ">=3.10"
+dependencies = ["textual", "rich"]
+
+[project.scripts]
+tos = "tos.app:main"

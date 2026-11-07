@@ -1,0 +1,82 @@
+#container {
+    layout: horizontal;
+    align: left bottom;
+}
+
+#right-dock {
+    padding-left: 1;
+}
+
+#main-dock {
+    layout: vertical;
+    width: 1.5fr;
+}
+
+#bottom-container {
+    height: 1;
+    align: center bottom;
+}
+
+#cart {
+    position: relative;
+    border: ascii;
+    width: 1fr;
+    height: 1fr;
+}
+
+#menu {
+    border: solid;
+    width: 1fr;
+}
+
+#guide {
+    padding: 1;
+    border: solid;
+    height: 2fr;
+    width: 1fr;
+}
+
+#history-container {
+    height: 1fr;
+    border: panel;
+    overflow-y: auto;
+}
+
+#history {
+    height: auto;
+    padding-left: 1;
+    width: 1fr;
+}
+
+#command-field {
+    outline: round;
+}
+
+#summary {  
+    content-align: center top;  
+    color: black;
+    background: transparent;
+}
+
+
+
+#dialog {
+    padding: 1;
+    height: 100vh;
+    layout: vertical;
+    color: black;
+    background: white;
+    border: heavy black;
+}
+
+
+
+#summary .datatable--header {
+    height: auto;
+    color: black;
+    background: transparent;
+}
+    
+#grand-total {
+    margin-top: 6;
+}
