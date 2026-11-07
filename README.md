@@ -2,6 +2,8 @@
 
 A terminal-based food ordering application built with Python and Textual.
 
+I this project i leanr about tui. And thats amazing
+
 ## Description
 
 **TOS (Terminal Order System)** is a terminal-based food ordering application that allows users to order food directly through the command line. Although it is a dummy application with no real-world ordering or payment functionality, it simulates a simple food ordering experience.
