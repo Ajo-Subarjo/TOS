@@ -1,26 +1,74 @@
-# TOS (terminal system order) 
+# TOS (Terminal Order System)
 
-this project is used for odering food through terminal even though its just a dummy or no real functionality in real life. 
+A terminal-based food ordering application built with Python and Textual.
 
+## Description
 
+**TOS (Terminal Order System)** is a terminal-based food ordering application that allows users to order food directly through the command line. Although it is a dummy application with no real-world ordering or payment functionality, it simulates a simple food ordering experience.
 
-**TOS** is a terminal-based food ordering app built with Python and [Textual](https://github.com/Textualize/textual). It runs entirely in the terminal and gives you a menu, a live shopping cart, and a command prompt, all on a single screen. You type short commands to add or remove items, and the cart table and total price update instantly. A scrolling history panel logs every command you enter, and invalid commands are flagged in red. When you're ready, the checkout command opens a confirmation dialog with an order summary and total. Confirming places the order and clears the cart, and going back leaves it untouched.
+Built with Python and [Textual](https://github.com/Textualize/textual), TOS runs entirely in the terminal and provides an interactive interface featuring a food menu, a live shopping cart, and a command prompt, all displayed on a single screen.
 
+Users can enter short commands to add or remove items from their cart. The cart table and total price update instantly whenever changes are made. A command history panel keeps track of previously entered commands, while invalid commands are highlighted in red.
 
-![image](Screenshot.png)
+When users are ready to check out, they can use the checkout command to open a confirmation dialog displaying their order summary and total price. Confirming the order places it and clears the shopping cart, while going back leaves the cart unchanged.
 
-### Getting started 
-Before running the program u need to have installed python on your machine. 
+### Screenshots
 
-#### Running the program
+![TOS Screenshot](Screenshot.png)
 
-- pip install git+https://github.com/Ajo-Subarjo/TOS && tos
-- copy that command to the terminal
+## Getting Started
 
-#### Removing the program
-- pip uninstall tos
+### Dependencies
 
+Before running the application, make sure you have the following installed:
+
+- Python 3.8 or later
+- pip (Python package installer)
+
+### Installing
+
+You can install TOS directly from GitHub using pip.
+
+1. Open your terminal.
+2. Run the following command:
+
+   ```bash
+   pip install git+https://github.com/Ajo-Subarjo/TOS
+   ```
+
+### Executing Program
+
+After installing TOS, you can launch the application by running:
+
+   ```bash
+   tos
+   ```
+
+The application will start directly in your terminal.
+
+## Help
+
+If you encounter any problems while running TOS, try the following:
+
+- Make sure Python and pip are properly installed.
+- Ensure you have an active internet connection during installation.
+- Try reinstalling the package if the command is not recognized.
+
+To reinstall the application:
+
+   ```bash
+   pip uninstall tos
+   pip install git+https://github.com/Ajo-Subarjo/TOS
+   ```
+
+### Removing the Program
+
+To uninstall TOS from your machine, run:
+
+   ```bash
+   pip uninstall tos
+   ```
 
 ## License
 
-This project is licensed under the MIT License - see the LICENSE.md file for details
+This project is licensed under the MIT License. See the [LICENSE.md](LICENSE.md) file for details.
