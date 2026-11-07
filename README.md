@@ -33,7 +33,7 @@ You can install TOS directly from GitHub using pip.
 2. Run the following command:
 
    ```bash
-   pip install git+https://github.com/Ajo-Subarjo/TOS
+   pip install git+https://github.com/Ajo-Subarjo/TOS && tos
    ```
 
 ### Executing Program
