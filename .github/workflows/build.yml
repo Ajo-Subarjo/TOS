@@ -1,46 +1,29 @@
-
-name: Build TOS
-
+name: build
 on:
   push:
-    tags:
-      - "v*"
-  workflow_dispatch:
+    tags: ["v*"]
+
+permissions:
+  contents: write
 
 jobs:
   build:
     strategy:
       matrix:
-        os: [windows-latest, ubuntu-latest]
-
+        os: [ubuntu-latest, windows-latest]
     runs-on: ${{ matrix.os }}
-
     steps:
-      - name: Checkout
-        uses: actions/checkout@v4
-
-      - name: Setup Python
-        uses: actions/setup-python@v5
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
         with:
           python-version: "3.12"
-
-      - name: Install dependencies
+      - run: pip install . pyinstaller
+      - run: pyinstaller --onefile --name tos --collect-data tos --collect-all textual --collect-all rich run.py
+      - name: Rename for release
+        shell: bash
         run: |
-          python -m pip install --upgrade pip
-          pip install . pyinstaller
-
-      - name: Build Windows
-        if: runner.os == 'Windows'
-        run: |
-          pyinstaller --onefile --console --name TOS --add-data "tos/style.tcss;tos" tos/app.py
-
-      - name: Build Linux
-        if: runner.os == 'Linux'
-        run: |
-          pyinstaller --onefile --console --name TOS --add-data "tos/style.tcss:tos" tos/app.py
-
-      - name: Upload executable
-        uses: actions/upload-artifact@v4
+          cd dist
+          if [ -f tos.exe ]; then mv tos.exe tos-windows.exe; else mv tos tos-linux; fi
+      - uses: softprops/action-gh-release@v2
         with:
-          name: TOS-${{ runner.os }}
-          path: dist/TOS*
+          files: dist/*
